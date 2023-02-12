@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Web</title>
+    <meta
+      name="description"
+      content="yes"
+    />
+    <meta
+      name="keywords"
+      content="yes"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#434c5e"
+    />
+    <meta name="googlebot" content="index, follow, snippet" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <div
+      title="Logo"
+      class="flex-center logo-wrapper header-center"
+    >
+      <img class="logo" src="http://clipart-library.com/images/kcMnoEjXi.png" alt="blockno" />
+      <h1>We hate block. Web fix!</h1>
+    </div>
+    <div class="flex-center desc">
+	  <center>
+      <p>
+        Web. Yes. Search.
+      </p>
+	  </center>
+    </div>
+
+    <form id="uv-form" class="flex-center">
+      <input
+        id="uv-search-engine"
+        value="https://www.google.com/search?q=%s"
+        type="hidden"
+      />
+      <input id="uv-address" type="text" placeholder="Search the web freely" />
+    </form>
+    <div class="desc left-margin">
+      <p id="uv-error"></p>
+      <pre id="uv-error-code"></pre>
+    </div>
+  </body>
+</html>
